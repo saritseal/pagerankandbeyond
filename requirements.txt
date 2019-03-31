@@ -1,0 +1,6 @@
+nose
+Flask
+Requests
+NetworkX
+pymonad
+twisted

@@ -1,0 +1,8 @@
+Install apache spark in Mac by
+
+brew install apache-spark
+
+Set the following environment variables in .profile
+SPARK_HOME=/usr/local/Cellar/apache-spark/2.2.0/libexec
+PYTHON_HOME=/usr/local/Cellar/apache-spark/2.2.0/libexec/python:/usr/bin/python3
+PYSPARK_PYTHON=python3

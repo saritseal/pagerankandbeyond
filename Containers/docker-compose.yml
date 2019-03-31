@@ -1,0 +1,10 @@
+version: '2'
+
+services:
+    pagerankserver2:
+        image: pagerankserver
+        restart: always
+
+    pagerankserver1:
+        image: pagerankserver
+        restart: always

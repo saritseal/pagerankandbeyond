@@ -1,0 +1,30 @@
+Commands to run Docker
+
+TIP: docker build
+
+docker build -t <name of the project> .
+This will use the dockerfile in the current path
+
+TIP: docker run
+
+docker run -d -p <external ip of physical host>:<internal container ip> <Name of the project>
+
+TIP: to see the docker processes
+
+docker ps -a
+
+TIP to stop the container
+
+docker stop <container name>
+
+
+TIP to clean dead containers
+
+docker rm -f $(docker ps -aq)
+
+
+docker system prune -af
+
+docker rmi $(docker images --filter "dangling=true" -q --no-trunc)
+
+docker images -a | grep "nginx" | `awk '{ print "docker rmi " $3 }'`
