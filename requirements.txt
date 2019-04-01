@@ -4,3 +4,5 @@ Requests
 NetworkX
 pymonad
 twisted
+pytype
+cuckoopy
