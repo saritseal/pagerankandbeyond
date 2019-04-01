@@ -7,11 +7,12 @@ from test_helper.Helper import *
 class Node_Test(unittest.TestCase):
 
     def test_createNode(self):
-        id = uuid.uuid1()
-        node = N.Node( id, {"x": 20, "type": "data"})
-        print(id, node.getIdentity())
-        self.assertEqual(id, node.getIdentity())
-        print(node.to_string())
+        for i in range(10):
+            id = uuid.uuid1()
+            node = N.Node( id, {"x": 20, "type": "data"})
+            # print(id, node.getIdentity())
+            self.assertEqual(id, node.getIdentity())
+            # print(node.to_string())
 
     
 
