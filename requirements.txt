@@ -6,3 +6,6 @@ pymonad
 twisted
 pytype
 cuckoopy
+scipy
+sklearn
+seaborn
